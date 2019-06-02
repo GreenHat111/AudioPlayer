@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">绕绕音乐</string>
+    <string name="local_music">本地音乐</string>
+    <string name="history_music">历史记录</string>
+    <string name="play_time_start">00:00</string>
+    <string name="nav_setting">设置</string>
+    <string name="nav_time_play">定时停止播放</string>
+    <string name="nav_exit">退出应用</string>
+    <string name="play_fragment_total_string">播放全部(共0首)</string>
+    <string name="album_music">专辑列表</string>
+
+    <string name="lrc_label">暂无歌词</string>
+</resources>

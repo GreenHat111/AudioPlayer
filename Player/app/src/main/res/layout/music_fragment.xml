@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/play_fragment_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/play_fragment_play"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_play_bar_btn_play" />
+
+        <TextView
+            android:id="@+id/play_fragment_total_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/play_fragment_total_string"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scan_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play_fragment_lyt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:textSize="25sp"
+        android:text="正在扫描..."/>
+
+    <ListView
+        android:id="@+id/play_fragment_list"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:dividerHeight="10dp"
+        android:divider="@color/grey"
+        android:visibility="gone"
+        tools:listitem="@layout/item_music_list"
+        android:layout_below="@+id/play_fragment_lyt"/>
+
+</RelativeLayout>
